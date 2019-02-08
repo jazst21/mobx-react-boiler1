@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "babel": "^6.23.0",
     "custom-react-scripts": "^0.2.2",
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",
