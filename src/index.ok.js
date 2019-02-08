@@ -2,6 +2,33 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import {observable, computed, autorun} from 'mobx';
 import {observer} from 'mobx-react';
+
+// class TodoStore {
+// 	todos = [];
+
+// 	get completedTodosCount() {
+//     	return this.todos.filter(
+// 			todo => todo.completed === true
+// 		).length;
+//     }
+
+// 	report() {
+// 		if (this.todos.length === 0)
+// 			return "<none>";
+// 		return `Next todo: "${this.todos[0].task}". ` +
+// 			`Progress: ${this.completedTodosCount}/${this.todos.length}`;
+// 	}
+
+//     addTodo(task) {
+// 		this.todos.push({
+// 			task: task,
+// 			completed: false,
+//             assignee: null
+// 		});
+// 	}
+// }
+
+// const todoStore = new TodoStore();
                         
 class ObservableTodoStore {
 	@observable todos = [];
